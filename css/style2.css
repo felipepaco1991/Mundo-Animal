@@ -445,7 +445,7 @@ footer .sessao4{
 	margin-top:15px;
 }
 
-.form form input[type=text]{
+.form form input[type=text],[type = email]{
 	width: 90%;
 	max-width: 480px;
 	margin-top:8px;

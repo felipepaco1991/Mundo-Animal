@@ -50,7 +50,7 @@
             <div class="banner-sobre">
             </div><!--banner-sobre-->
             
-            <div class="history" data-aos="fade-right">
+            <div class="history" >
                 <div class="icon">
                     <div class="icon-sobre" style="background-image: url(images/menor.png); background-size: 30% 30%; background-repeat: no-repeat; background-position: center;">
                         <p>Quem somos</p>
@@ -80,8 +80,8 @@
                 <h1>Nossa História</h1>
 
                 <div class="conto-wraper">
-                    <div class="img-conto"  data-aos="fade-left" data-aos-duration="2000"></div><!--img-conto-->
-                    <div class="text-conto"  data-aos="fade-right" data-aos-duration="2000">
+                    <div class="img-conto"  ></div><!--img-conto-->
+                    <div class="text-conto"  >
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pretium dui augue, eu varius odio porta non. Cras ex tellus, dapibus quis nisi eget, ullamcorper faucibus lorem. Sed ut cursus justo. Nulla auctor euismod laoreet. In et elit at felis tincidunt dapibus sit amet ac metus. Etiam accumsan neque sollicitudin, convallis nulla nec, pharetra purus. Praesent lorem lorem, aliquam nec elit in, semper gravida metus. Nam malesuada faucibus maximus. Mauris volutpat lorem a quam iaculis, vitae facilisis nisl convallis. Sed laoreet purus at urna aliquet semper. Praesent id placerat velit. Donec scelerisque leo vitae consequat ullamcorper. Suspendisse tincidunt arcu in condimentum pellentesque. Nam ex libero, tincidunt vel hendrerit ac, tincidunt pellentesque est. Duis scelerisque leo lacus, eget facilisis mauris suscipit in.
 
                             Morbi quis ullamcorper urna. Aenean varius, nibh vitae varius interdum, diam lorem dictum dolor, sit amet semper tellus purus nec risus. Etiam massa urna, varius vel dolor nec, posuere lobortis justo. Suspendisse feugiat diam nibh. In pulvinar bibendum euismod. Nam eget ipsum eget arcu hendrerit egestas id in lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi nisi turpis, ullamcorper sed nisi eu, imperdiet porttitor augue. Maecenas ultrices, odio eu gravida pellentesque, lacus orci finibus magna, eget commodo felis sapien eget lorem. Integer vel neque convallis lectus pellentesque aliquet.
@@ -93,7 +93,7 @@
         </div><!--container-->
     
   
-       <footer data-aos="fade-down-right" data-aos-duration="1500">
+       <footer >
             <div class="container">
                 <div class="sessao4">
                 <div class="form">
@@ -101,11 +101,11 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam scelerisque lobortis iaculis. In hac habitasse platea dictumst. Cras vitae purus metus.</p>
         
                     <form>
-                        <input type="text" name="nome" placeholder="Nome*">
-                        <input type="text" name="email" placeholder="E-mail*">
+                        <input type="text" name="name" placeholder="Nome*" required id="name">
+                        <input type="email" name="email" placeholder="E-mail*" required id="name">
                         <textarea name="mensagem" placeholder="Mensagem*"></textarea>
                         
-                        <div><input type="submit" value="Enviar"></div>
+                        <div><input type="submit" value="Enviar" id="submit"></div>
                     </form>
         
                 </div><!--form-->
@@ -132,10 +132,7 @@
 
         </footer>
        
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-          AOS.init();
-    </script>   
-    <!--<script src="js/functions.js"></script>-->
+   
+    <script src="js/map.js"></script>
 </body>
 </html>
