@@ -5,13 +5,12 @@
     <meta name="author" content="Felipe Paço">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-    <link href="css/style2.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <link href="css/style.css" rel="stylesheet">
     <meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
     <title>Mundo Animal</title>
 </head>
-<body>
+<body onload="initMap()">
     <header>
         
         <div class="container">
@@ -30,6 +29,7 @@
             </nav><!--Menu-desktop-->
 
             <nav class="menu-mobile">
+                <img src="images/menu.png">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="sobre.html">Sobre</a></li>
@@ -142,7 +142,7 @@
         <div class="clear"></div>
         </div><!--container-->
         
-        <footer>
+        <footer >
             <div class="container">
                 <div class="sessao4">
                 <div class="form">
@@ -165,10 +165,10 @@
                             <div class="clear"></div>
                             <div id="mapa" class="map">
                                <div class="mapouter">
-                                   <div class="mapa" ></div><!--mapa-->
-                                   <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=mundo%20animal%20estrada%20da%20matrix&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                                   <div class="mapa" id="map" ></div><!--mapa-->
+                                  
 
-                                        </div>
+                                </div><!--mapouter-->
                             </div><!--map-->
                         </div><!--map-wraper2-->
                         </div><!--map-wraper-3-->
@@ -192,7 +192,9 @@
 
        
 
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBd1xtvSbbYFaoUQOpjl4QdpirQtj_YYsI&callback=initMap">  
+    </script>
     <script src="js/map.js"></script>
-   <script src="js/validateForm.js"></script>
+    <script src="js/validateForm.js"></script>
 </body>
 </html>
